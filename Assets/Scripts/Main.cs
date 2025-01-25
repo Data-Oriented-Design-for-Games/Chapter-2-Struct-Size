@@ -125,37 +125,37 @@ namespace DOD_BOOK
 
                     time = Time.realtimeSinceStartupAsDouble;
                     for (int j = 0; j < NumTests; j++)
-                        m_structBytes4 = PassStruct4(m_structBytes4, j);
+                        PassStruct4(m_structBytes4);
                     m_time[count++] += Time.realtimeSinceStartupAsDouble - time;
 
                     time = Time.realtimeSinceStartupAsDouble;
                     for (int j = 0; j < NumTests; j++)
-                        m_structBytes8 = PassStruct8(m_structBytes8, j);
+                        PassStruct8(m_structBytes8);
                     m_time[count++] += Time.realtimeSinceStartupAsDouble - time;
 
                     time = Time.realtimeSinceStartupAsDouble;
                     for (int j = 0; j < NumTests; j++)
-                        m_structBytes12 = PassStruct12(m_structBytes12, j);
+                        PassStruct12(m_structBytes12);
                     m_time[count++] += Time.realtimeSinceStartupAsDouble - time;
 
                     time = Time.realtimeSinceStartupAsDouble;
                     for (int j = 0; j < NumTests; j++)
-                        m_structBytes16 = PassStruct16(m_structBytes16, j);
+                        PassStruct16(m_structBytes16);
                     m_time[count++] += Time.realtimeSinceStartupAsDouble - time;
 
                     time = Time.realtimeSinceStartupAsDouble;
                     for (int j = 0; j < NumTests; j++)
-                        m_structBytes20 = PassStruct20(m_structBytes20, j);
+                        PassStruct20(m_structBytes20);
                     m_time[count++] += Time.realtimeSinceStartupAsDouble - time;
 
                     time = Time.realtimeSinceStartupAsDouble;
                     for (int j = 0; j < NumTests; j++)
-                        m_structBytes24 = PassStruct24(m_structBytes24, j);
+                        PassStruct24(m_structBytes24);
                     m_time[count++] += Time.realtimeSinceStartupAsDouble - time;
 
                     time = Time.realtimeSinceStartupAsDouble;
                     for (int j = 0; j < NumTests; j++)
-                        m_structBytes64 = PassStruct64(m_structBytes64, j);
+                        PassStruct64(m_structBytes64);
                     m_time[count++] += Time.realtimeSinceStartupAsDouble - time;
 
                     PublicTotal += m_structBytes4.a + m_structBytes8.a + m_structBytes12.a + m_structBytes16.a + m_structBytes20.a + m_structBytes24.a + m_structBytes64.a;
@@ -174,46 +174,46 @@ namespace DOD_BOOK
             }
         }
 
-        public static StructBytes4 PassStruct4(StructBytes4 structBytes4, int value)
+        public static int PassStruct4(StructBytes4 structBytes4)
         {
-            structBytes4.a += value;
-            return structBytes4;
+            structBytes4.a = 0;
+            return structBytes4.a;
         }
 
-        public static StructBytes8 PassStruct8(StructBytes8 structBytes8, int value)
+        public static int PassStruct8(StructBytes8 structBytes8)
         {
-            structBytes8.a += value;
-            return structBytes8;
+            structBytes8.a = 0;
+            return structBytes8.a;
         }
 
-        public static StructBytes12 PassStruct12(StructBytes12 structBytes12, int value)
+        public static int PassStruct12(StructBytes12 structBytes12)
         {
-            structBytes12.a += value;
-            return structBytes12;
+            structBytes12.a = 0;
+            return structBytes12.a;
         }
 
-        public static StructBytes16 PassStruct16(StructBytes16 structBytes16, int value)
+        public static int PassStruct16(StructBytes16 structBytes16)
         {
-            structBytes16.a += value;
-            return structBytes16;
+            structBytes16.a = 0;
+            return structBytes16.a;
         }
 
-        public static StructBytes20 PassStruct20(StructBytes20 structBytes20, int value)
+        public static int PassStruct20(StructBytes20 structBytes20)
         {
-            structBytes20.a += value;
-            return structBytes20;
+            structBytes20.a = 0;
+            return structBytes20.a;
         }
 
-        public static StructBytes24 PassStruct24(StructBytes24 structBytes24, int value)
+        public static int PassStruct24(StructBytes24 structBytes24)
         {
-            structBytes24.a += value;
-            return structBytes24;
+            structBytes24.a = 0;
+            return structBytes24.a;
         }
 
-        public static StructBytes64 PassStruct64(StructBytes64 structBytes64, int value)
+        public static int PassStruct64(StructBytes64 structBytes64)
         {
-            structBytes64.a += value;
-            return structBytes64;
+            structBytes64.a = 0;
+            return structBytes64.a;
         }
     }
 }
